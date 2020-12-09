@@ -4,6 +4,7 @@ const codeifyIN = document.getElementById("codeifyIN")
 const textArea = document.getElementById("textarea")
 
 codeifyIN.addEventListener("input", updateCodeifyOUT)
+saveJSON.addEventListener("click", )
 
 function updateCodeifyOUT() {
     codeifyOUT.innerHTML = ""
@@ -11,4 +12,12 @@ function updateCodeifyOUT() {
     let text = textFormat(textArea.value, "Body-Text-alignLeft")
     //text.id = "codeifyOUTtext"
     codeifyOUT.appendChild(text)
+
+    const obj = {
+        text: textArea.value
+    };
+    const data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
+    const a = document.getElementById("saveJSON")
+    a.href = 'data:' + data;
+    a.download = 'data.json';
 }
