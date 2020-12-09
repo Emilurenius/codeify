@@ -1,0 +1,17 @@
+{
+  "name": "codeifyexamplewebsite",
+  "version": "1.0.0",
+  "description": "an example of how the codeify module can be used on a website",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js 80"
+  },
+  "author": "Emil Christiansen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
