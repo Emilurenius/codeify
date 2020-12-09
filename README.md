@@ -22,6 +22,25 @@ Current examples on the website:
 
 More coming as I flesh out codeify...
 
+# Set up example website:
+First of all, you need the newest version of node.js installed on your computer: https://nodejs.org/en/download/
+
+When you have node.js downloaded, you can either copy the files directly to your computer maunually, or you can use the following git command in the command line:
+
+git clone https://github.com/Emilurenius/codeify.git
+
+To update, make sure you are in the same directory, and write this in the console: git pull.
+
+When all the files are downloaded, follow these steps:
+* Open a terminal, and navigate to the folder you just downloaded
+* open the folder named "exampleWebsite"
+* write the following command in the terminal if on windows: node app.js 80
+* write the following command in the terminal if on linux: node app.js 8080
+* Open a browser
+* Write this in the address line: localhost:80 if on windows, localhost:8080 if on linux.
+
+The website should open up. Now you just explore the examples set up, or change the code to see what happens.
+
 # How to integrate codeify in your own website:
 if you are familiar with importing other javascript files into your file, this will probably be easy for you. If it isn't however,  I will explain now:
 
