@@ -30,6 +30,7 @@ When you have node.js downloaded, you can either copy the files directly to your
 git clone https://github.com/Emilurenius/codeify.git
 
 To update, make sure you are in the same directory, and write this in the console: git pull.
+If git is giving trouble, try writing "git stash" and try to pull changes again.
 
 When all the files are downloaded, follow these steps:
 * Open a terminal, and navigate to the folder you just downloaded
