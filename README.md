@@ -40,7 +40,7 @@ When all the files are downloaded, follow these steps:
 * Open a browser
 * Write this in the address line: localhost:80 if on windows, localhost:8080 if on linux.
 
-The website should open up. Now you just explore the examples set up, or change the code to see what happens.
+The website should open up. Now you just explore the examples set up by writing "localhost" in your browser's addressbar, or change the code to see what happens.
 
 # How to integrate codeify in your own website:
 if you are familiar with importing other javascript files into your file, this will probably be easy for you. If it isn't however,  I will explain now:
