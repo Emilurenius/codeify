@@ -15,7 +15,7 @@ export function textFormat(rawText, textClass) {
 
                 if (command[0] == "link") {
                     let link = document.createElement("a")
-                    link.classList.add("linkStyle")
+                    link.classList.add(command[3])
                     link.href = command[1]
                     const linkText = document.createTextNode(`${command[2]} `)
                     link.appendChild(linkText)

@@ -45,22 +45,28 @@ app.use(cors()) // Making sure the browser can request more data after it is loa
 app.use("/static", express.static("public"))
 
 
-
+app.get("/", (req, res) => {
+    console.log("\nMain page requested")
+    res.send("Main page")
+})
 
 app.get("/testinput", (req, res) => {
-
-    res.sendFile(path.join(__dirname, "/html/index.html"))
-    console.log(`\npage served: /`)
+    console.log(`\nTestinput page requested`)
+    res.sendFile(path.join(__dirname, "/html/testInput.html"))
 })
 
-app.get("/fromjson", req, res => {
-
+app.get("/fromjson", (req, res) => {
+    res.sendFile(path.join(__dirname, "/html/fromJSON.html"))
 })
 
-app.get("*", function(req, res){
-    res.sendFile(path.join(__dirname, "/html/Index.html"))
+app.get("/fromjson/articles", (req, res) => {
+    console.log("\narticles for /fromjson requested")
+    res.sendFile(path.join(__dirname, "/json/articles.json"))
+})
+
+app.get("*", (req, res) => {
     console.log("\nNonexistent page requested!")
-    console.log(`page served: /`)
+    res.redirect("/")
 })
 
 app.listen(port, () => console.log(`Server started on port ${port}`))

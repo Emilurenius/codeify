@@ -1,6 +1,7 @@
 :root {
-    --main-background-color: #5D4954;
-    --secondary-background-color: #382c33;
+    --main-background-color: #552900;
+    --secondary-background-color: #e96a44;
+    --button-color: #ff0000;
 }
 
 *{
@@ -10,7 +11,8 @@
 }
 
 body {
-    background-color: #26272e;
+    background-color: #270000;
+    overflow-x: hidden;
 }
 
 nav {
@@ -178,7 +180,7 @@ nav {
 }
 
 .Content .button {
-    background-color: #4f3d48;
+    background-color: var(--button-color);
   	border: none;
  	color: white;
   	text-align: center;
@@ -214,24 +216,66 @@ nav {
     height: 30%;
 }
 
-.Content .textarea {
-    height: 500px;
-    width: 80%;
-    font-size: 25px;
-}
-
-.Content .linkStyle {
+.linkStyle {
     text-decoration: none;
-    color: #3d7bff;
+    color: #0d43b6;
 }
 
 @media screen and (max-width: 768px) {
     .Content .Main-Text {
-        font-size: 45px;
+        font-size: 35px;
     }
+
+    .Content .Body-Text {
+        font-size: 15px;
+    }
+
+    .Content.Body-Text-alignLeft {
+        font-size: 15px;
+    }
+
     .Content .image {
         margin: 10px;
         width: 50%;
         height:50%;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .Content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .Content .Main-Text {
+        font-size: 22px;
+    }
+
+    .Content .Body-Text {
+        font-size: 10px;
+    }
+
+    .Content.Body-Text-alignLeft {
+        font-size: 10px;
+    }
+
+    .Content .image {
+        margin: 5px;
+        width: 25%;
+        height: 25%;
+    }
+
+    .Content .button {
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .Content .Content-box {
+        margin: 10px;
+    }
+}
+
+.hidden {
+    display: none;
 }

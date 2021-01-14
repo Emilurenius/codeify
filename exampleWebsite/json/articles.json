@@ -1,0 +1,8 @@
+{
+    "This is the first article": "This article is the first one that comes up, because it is the first one in the JSON file",
+    "Here is another one": "If you take a look at the JSON file, you might see that the title is the key, and the body is the value",
+    "That is just one way to do it": "Try adding your own key, value pair in the JSON file, and play with the functions that codeify offers!",
+    "here is a link:": "This is the <link,https://github.com/Emilurenius/codeify,repository,linkStyle> that this test page comes from\n\nTry adding your own link!\n\nThis link is added like this: \"<link,https://github.com/Emilurenius/codeify,link,linkStyle>\"",
+    "Did you notice the newlines?": "You can insert newlines when writing!\nIf you are using a text editor, simpy press enter!\n\nOtherwise, look at how it is done inside the JSON file on the server.",
+    "Where is the JSON file?": "You can find the json file inside the json folder in the examplewebsite folder!"
+}

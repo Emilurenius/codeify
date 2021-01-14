@@ -4,7 +4,6 @@ const codeifyIN = document.getElementById("codeifyIN")
 const textArea = document.getElementById("textarea")
 
 codeifyIN.addEventListener("input", updateCodeifyOUT)
-saveJSON.addEventListener("click", )
 
 function updateCodeifyOUT() {
     codeifyOUT.innerHTML = ""
