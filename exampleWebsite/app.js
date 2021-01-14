@@ -47,7 +47,7 @@ app.use("/static", express.static("public"))
 
 app.get("/", (req, res) => {
     console.log("\nMain page requested")
-    res.send("Main page")
+    res.sendFile(path.join(__dirname, "/html/index.html"))
 })
 
 app.get("/testinput", (req, res) => {
