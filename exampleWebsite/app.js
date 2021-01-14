@@ -40,11 +40,6 @@ function saveJSON(filename, dict) {
 }
 // functions end
 
-
-log = loadJSON("json/log.json", sync=true)
-console.log("Log file loaded")
-console.log(log)
-
 app.use(cors()) // Making sure the browser can request more data after it is loaded on the client computer.
 
 app.use("/static", express.static("public"))
@@ -52,20 +47,17 @@ app.use("/static", express.static("public"))
 
 
 
-app.get("/", function(req, res) {
-    log.connections ++
-    console.log(log)
-    saveJSON("json//log.json", log)
+app.get("/testinput", (req, res) => {
 
     res.sendFile(path.join(__dirname, "/html/index.html"))
     console.log(`\npage served: /`)
 })
 
-app.get("*", function(req, res){
-    log.connections ++
-    console.log(log)
-    saveJSON("json//log.json", log)
+app.get("/fromjson", req, res => {
 
+})
+
+app.get("*", function(req, res){
     res.sendFile(path.join(__dirname, "/html/Index.html"))
     console.log("\nNonexistent page requested!")
     console.log(`page served: /`)
