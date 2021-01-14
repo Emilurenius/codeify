@@ -86,4 +86,6 @@ If you need to get familiar with how it reacts to input, just set up the example
 Now for some functions:
 * link: <link,https://desiredwebsite.com,displayedText>
 
+The link function is called by staring with "<link". Make sure there are no spaces when writing the function. Then it takes two variables: The link comes after the first comma, and then after the second comma you write the text you want to be displayed on the website.
+
 More coming as I make them... Suggestions are also welcome!
