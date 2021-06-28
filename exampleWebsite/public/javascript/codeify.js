@@ -1,4 +1,4 @@
-export function textFormat(rawText, textClass) {
+function textFormat(rawText, textClass) {
     const textBox = document.createElement("div")
     const bodyTextList = rawText.split("\n")
     let body = document.createElement("p")
@@ -20,7 +20,14 @@ export function textFormat(rawText, textClass) {
                     const linkText = document.createTextNode(`${command[2]} `)
                     link.appendChild(linkText)
                     body.appendChild(link)
-                } 
+                }
+                else if (command[0] == "color") {
+                    command[1] = command[1].replaceAll("_", " ")
+                    const text = document.createElement("p")
+                    text.innerHTML = command[1]
+                    text.style = `color: ${command[2]}`
+                    body.appendChild(text)
+                }
                 else {
                     const text = document.createTextNode(`<${command}> `)
                     body.appendChild(text)
@@ -37,7 +44,7 @@ export function textFormat(rawText, textClass) {
     return textBox
 }
 
-export function translate(json) {
+function translate(json) {
     for (let key of Object.keys(json)) {
         if (key == "header") {
             console.log(`Translating to: ${json[key].language}`)

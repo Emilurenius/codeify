@@ -1,4 +1,3 @@
-import {textFormat} from "/static/javascript/codeify.js" // Import codeify function "textFormat". remember to change address when using your own website!
 const address = window.location.origin
 const articlesContainer = document.getElementById("articles")
 

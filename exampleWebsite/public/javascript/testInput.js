@@ -1,4 +1,3 @@
-import {textFormat} from "/static/javascript/codeify.js"
 const codeifyOUT = document.getElementById("codeifyOUT")
 const codeifyIN = document.getElementById("codeifyIN")
 const textArea = document.getElementById("textarea")
